@@ -2,7 +2,7 @@ use crate::direction::Direction;
 use std::collections::HashMap;
 
 // THis is the instruction key to be used to look up
-// the correct instruction in the hashset
+// the correct instruction in the hashmap of instructions
 pub struct InstructionKey {
     state: char,
     current_symbol: char,
