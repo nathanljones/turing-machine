@@ -18,8 +18,11 @@ pub struct Instructions {
     instructions: HashMap<InstructionKey, Instruction>,
 }
 // get the next instruction
-pub fn get_next_instruction(
-    instruction_key: InstructionKey,
-) -> HashMap<InstructionKey, Instruction> {
-    todo!()
+impl Instructions {
+    pub fn get_next_instruction(
+        &self,
+        instruction_key: InstructionKey,
+    ) -> HashMap<InstructionKey, Instruction> {
+        todo!()
+    }
 }
