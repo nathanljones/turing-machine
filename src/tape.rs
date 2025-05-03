@@ -28,7 +28,7 @@ impl Tape {
         }
     }
     pub fn move_right(&mut self) {
-        // increment the position counter but if we go above the length of the vector
+        // increment the position counter, but if we go above the length of the vector
         // then add an element to the end, then increment the position counter
         // this will extend the tape "indefinitely" to the right
         if self.position == (self.cells.len() - 1) as u64 {
@@ -39,10 +39,10 @@ impl Tape {
     // the read and write bits are effectively the tape head
     // not sure if this needs to be spilt out
     pub fn read(&self) -> char {
-        self.cells[(self.position) as usize]
+        self.cells[self.position as usize]
     }
     pub fn write(&mut self, c: char) {
-        self.cells[(self.position) as usize] = c;
+        self.cells[self.position as usize] = c;
     }
 }
 mod tests {
